@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Suryachandra Prasad Pasupuleti | Computer Science Researcher</title>
+  <meta name="description" content="PhD researcher at the University of York working on energy-aware performance engineering, FPGA acceleration, systems for machine learning, and machine learning for systems.">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="site-layout">
+    <aside class="sidebar" aria-label="Profile and contact">
+      <div class="profile">
+        <img class="portrait"
+     src="images/surya.jpg"
+     width="480"
+     height="560"
+     alt="Portrait of Suryachandra Prasad Pasupuleti">
+        <h1>Suryachandra Prasad Pasupuleti</h1>
+        <p class="position">PhD Researcher</p>
+        <p class="affiliation">Department of Computer Science<br>University of York</p>
+      </div>
+      <nav class="section-nav" aria-label="Main navigation">
+        <a class="cv" href="files/cv.pdf">Curriculum vitae (PDF)</a>
+        <a href="#about">About</a>
+        <a href="#research">Research &amp; publications</a>
+        <a href="#service">Academic service</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+      </nav>
+      <div class="contact" id="contact">
+        <h2>Contact &amp; links</h2>
+        <a href="mailto:sp1822@york.ac.uk">sp1822@york.ac.uk</a>
+        <a href="https://scholar.google.com/citations?user=PDQHHoIAAAAJ&amp;hl=en">Google Scholar</a>
+        <a href="https://github.com/suryachandra949">GitHub</a>
+        <a href="https://www.linkedin.com/in/suryachandra-prasad-pasupuleti-62495912b/">LinkedIn</a>
+      </div>
+    </aside>
+    <main id="main" tabindex="-1">
+      <section id="about" aria-labelledby="about-title">
+        <p class="eyebrow">About</p>
+        <h2 id="about-title" class="intro-title">Suryachandra Prasad Pasupuleti</h2>
+        <p class="intro">I am a PhD researcher in Computer Science at the University of York, working on energy-aware performance engineering of high-performance computing (HPC) workloads.</p>
+        <p>My research explores how to balance computational performance with energy efficiency through models and tools for energy-aware optimisation. My broader interests span systems for machine learning and machine learning for systems: making ML workloads more efficient, and using ML and large language models to support performance engineering, resource management, and other HPC tasks.</p>
+        <p>Before starting my PhD in September 2024, I worked as an FPGA Design Consultant in the UK, developing systems for avionics and high-speed communications. My experience spans FPGA-based acceleration, embedded systems, and hardware/software co-design, including deep learning inference and real-time image processing.</p>
+        <p>I hold an MSc in Digital Systems Engineering from the University of York and degrees in Electrical and Electronics Engineering and Chemistry from BITS Pilani. I have also held a research internship at IIIT Hyderabad.</p>
+        <h3 class="interests-title">Research interests</h3>
+        <ul class="interests">
+          <li>Energy-aware HPC</li>
+          <li>Performance modelling and optimisation</li>
+          <li>FPGA acceleration</li>
+          <li>Hardware/software co-design</li>
+          <li>Systems for machine learning</li>
+          <li>Machine learning for systems</li>
+        </ul>
+      </section>
+      <section id="research" aria-labelledby="research-title">
+        <header class="section-heading"><h2 id="research-title">Research &amp; publications</h2></header>
+        <article class="paper" id="bodhi">
+          <p class="paper-status">Accepted · HiPC 2026 · Forthcoming</p>
+          <h3>BODHI: Intelligent and Explainable LLM-Assisted HPC Scheduling</h3>
+          <p class="authors">Suryachandra Prasad Pasupuleti and Steven Wright</p>
+          <p class="authors">To appear in Proceedings of the 33rd IEEE International Conference on High Performance Computing (HiPC 2026).<br>Conference dates: 16–19 December 2026 · Bengaluru, India</p>
+          <p>BODHI combines the Flux scheduler with open-source language models to make context-aware HPC scheduling decisions and explain the trade-offs between resource efficiency and fairness. We evaluate 10 models and find that quantised mixture-of-experts models offer the best balance of scheduling quality, inference speed, and energy use. In our experiments, LLM-assisted scheduling improves user-level wait-time fairness over a utilisation-focused approach while retaining efficiency gains over FCFS and EASY backfilling.</p>
+          <div class="paper-links">
+            <a href="https://hipc.org/">Conference</a>
+          </div>
+          <details>
+            <summary>Read abstract</summary>
+            <div class="abstract"><p>Job scheduling on High-Performance Computing (HPC) systems involves optimising for different metrics such as utilisation, fairness, wait times, job throughput, and makespan, and is considered an NP-hard problem; often these metrics are conflicting in nature. As software workloads continue to evolve and hardware resources become increasingly complex, there is a growing need for intelligent schedulers capable of making context-aware scheduling decisions. Large language models (LLMs) offer a promising approach by reasoning over system state, multiple feasible scheduling solutions, job queue information, resource availability, and historical scheduling data to optimise multiple scheduling objectives simultaneously. In this paper, we introduce BODHI, an LLM-assisted scheduling framework built for the Flux scheduler to investigate the use of open-source LLMs for intelligent HPC job scheduling. We evaluate 10 open-source LLMs for the task of HPC job scheduling using both output quality and inference efficiency metrics, demonstrating that quantised Mixture-of-Experts (MoE) models provide the best trade-off between scheduling quality, inference throughput, and energy consumption. While some models achieve strong performance in generating appropriate scheduling actions and coherent reasoning, all evaluated models show comparatively weaker performance in analysing and justifying trade-offs among the multiple feasible scheduling solutions. Finally, we compare two variants of our BODHI framework, LLM-assisted and utilisation-focused without LLM, against first-come-first-served (FCFS) and EASY backfilling. The utilisation-focused variant achieves the highest resource efficiency but at the cost of wait-time fairness. BODHI’s LLM-assisted scheduling recovers much of this fairness loss, particularly across users, while retaining efficiency gains well above FCFS and EASY.</p></div>
+          </details>
+          <!-- Add the final publication date, DOI, and code/data URL when available. -->
+        </article>
+        <!-- PAPER START: duplicate this entire article to add another publication.
+             Citation checked against Google Scholar on 13 September 2026.
+             Full abstract: accepted author manuscript, CC BY 4.0,
+             https://eprints.whiterose.ac.uk/id/eprint/240937/1/The_Performance_Power_Frontier.pdf
+        -->
+        <article class="paper">
+          <p class="paper-status">Published · ICS ’26 · 6 July 2026 · pp. 1154–1164</p>
+          <h3>The Performance-Power Frontier: A Model-Driven Approach to Energy-Aware Application Optimisation</h3>
+          <p class="authors">Suryachandra Prasad Pasupuleti and Steven Wright</p>
+          <p class="authors">Proceedings of the 40th ACM International Conference on Supercomputing</p>
+          <p>We extend the Power-Optimised Software Envelope (POSE) model and introduce a visualisation toolkit to help performance engineers balance execution time and energy consumption. Experiments with the NAS Parallel Benchmarks show how opportunities for energy-aware optimisation vary across workloads, and when aggressive power or frequency limits can reduce efficiency.</p>
+          <div class="paper-links">
+            <a href="https://eprints.whiterose.ac.uk/id/eprint/240937/1/The_Performance_Power_Frontier.pdf">PDF (accepted manuscript)</a>
+            <a href="https://doi.org/10.1145/3797905.3807859">Published paper</a>
+            <a href="https://github.com/pose-model/cache-aware-pose">Code / data</a>
+          </div>
+          <details>
+            <summary>Read abstract</summary>
+            <div class="abstract">
+              <p>Energy consumption in high-performance computing (HPC) has emerged as a primary design constraint, with Tier-0 systems now demanding tens of megawatts. While users are increasingly being encouraged to minimise the environmental and operational costs of their workloads, they frequently lack the analytical frameworks required to navigate the complex trade-offs between execution time and energy efficiency. In this paper, we extend the Power-Optimised Software Envelope (POSE) model and introduce a visualisation tool designed to help performance engineers explore the energy-time design space. By aligning multi-objective optimisation metrics with institutional operational priorities, our framework enables policy-aware decision-making at the application level. We demonstrate this approach by analysing the NAS Parallel Benchmarks. Our results reveal a significant variance in energy-aware optimisation potential: while the Embarrassingly Parallel (EP) kernel shows negligible opportunity for gains (up to 0.37% improvement in Energy-Delay Summation), the Conjugate Gradient (CG) kernel offers greater scope (up to a 12.96% improvement). Furthermore, we study the benchmarks under frequency and power constraints and identify critical efficiency thresholds; for the Block Tri-Diagonal (BT) solver, configurations operating below 2.00 GHz or under a 140 W powercap fail to outperform the baseline efficiency, highlighting the risks of aggressive over-throttling.</p>
+            </div>
+          </details>
+          <!-- OPTIONAL FIGURE: add your file, replace the alt and caption, then uncomment.
+          <figure class="paper-figure">
+            <img src="images/paper-figure.jpg" alt="REPLACE: Describe the figure and its main finding" width="1200" height="800" loading="lazy">
+            <figcaption>[REPLACE: Figure caption.]</figcaption>
+          </figure>
+          -->
+        </article>
+        <!-- PAPER END -->
+      </section>
+      <section id="service" aria-labelledby="service-title">
+        <header class="section-heading"><h2 id="service-title">Academic service</h2></header>
+        <article class="course">
+          <p class="paper-status">2026</p>
+          <h3>Programme Committee Member</h3>
+          <p><a href="https://pmbs-workshop.github.io/">17th International Workshop on Performance Modeling, Benchmarking and Simulation of High Performance Computer Systems (PMBS 2026)</a></p>
+          <p class="authors">Held in conjunction with SC26 · 15 November 2026</p>
+          <p><a href="https://pmbs-workshop.github.io/programmecommittee.html">Technical programme committee</a></p>
+        </article>
+        <article class="course">
+          <p class="paper-status">2025</p>
+          <h3>Student Volunteer</h3>
+          <p><a href="https://clustercomp.org/2025/">IEEE International Conference on Cluster Computing (CLUSTER 2025)</a></p>
+          <p class="authors">2–5 September 2025 · Edinburgh, United Kingdom</p>
+        </article>
+      </section>
+      <section id="experience" aria-labelledby="experience-title">
+        <header class="section-heading"><h2 id="experience-title">Research &amp; industry experience</h2></header>
+        <article class="course">
+          <p class="paper-status">November 2024 – March 2025</p>
+          <h3>Research Assistant</h3>
+          <p class="authors">SYSTRON Lab · University of York</p>
+          <p>Worked on analytical modelling to estimate power consumption for 6G, as part of a project funded by the CHEDDAR communications hub.</p>
+        </article>
+        <article class="course">
+          <p class="paper-status">October 2022 – July 2024</p>
+          <h3>FPGA Design Consultant</h3>
+          <p class="authors">Covnetics Limited · Nuneaton, United Kingdom</p>
+          <p>Worked on FPGA-based systems for deep learning inference, avionics, and high-speed communications, spanning implementation, processor integration, and automated verification.</p>
+          <ul>
+            <li>Deployed deep learning inference solutions on the AMD KV260 system-on-chip (SoC) board.</li>
+            <li>Contributed to a real-time video-processing system for multiple video feeds on Intel Stratix FPGAs for an avionics project, and integrated a Nios II processor into the FPGA design flow.</li>
+            <li>Developed an Intel Cyclone FPGA-based communications gateway that emulated a network interface. Contributed to bidirectional protocol conversion between STM-1/STM-4 data streams and ATM packets for integration with existing ATM networks, and automated verification with Tcl and Python scripts and comprehensive testbenches.</li>
+          </ul>
+        </article>
+        <article class="course">
+          <p class="paper-status">August – December 2019</p>
+          <h3>Research Intern</h3>
+          <p class="authors">Computer Systems Group · International Institute of Information Technology Hyderabad</p>
+          <p>Implemented an image-processing system on ZedBoard and Zynq UltraScale FPGA platforms, including PetaLinux device drivers for hardware/software integration.</p>
+        </article>
+        <article class="course">
+          <p class="paper-status">June – December 2018</p>
+          <h3>Bachelor’s thesis: Accelerating Image Processing Pipelines on FPGAs</h3>
+          <p class="authors">International Institute of Information Technology Hyderabad</p>
+          <p>Optimised bilateral filter and bilateral grid implementations for FPGAs by exploiting parallelism at multiple levels.</p>
+        </article>
+      </section>
+      <section id="education" aria-labelledby="education-title">
+        <header class="section-heading"><h2 id="education-title">Education</h2></header>
+        <article class="course">
+          <p class="paper-status">September 2024 – present</p>
+          <h3>PhD in Computer Science</h3>
+          <p class="authors">University of York · United Kingdom</p>
+        </article>
+        <article class="course">
+          <p class="paper-status">September 2021 – September 2022</p>
+          <h3>MSc in Digital Systems Engineering</h3>
+          <p class="authors">University of York · United Kingdom</p>
+        </article>
+        <article class="course">
+          <p class="paper-status">August 2014 – August 2019</p>
+          <h3>BE in Electrical and Electronics · MS in Chemistry</h3>
+          <p class="authors">Birla Institute of Technology and Science Pilani · Goa, India</p>
+        </article>
+      </section>
+      <!-- OPTIONAL SECTIONS: no teaching or working-paper entries were supplied in the CV.
+           Uncomment these sections and restore their navigation links when ready.
+      <section id="working-papers" aria-labelledby="working-title">
+        <header class="section-heading"><h2 id="working-title">Working papers</h2></header>
+        <article class="paper">
+          <p class="paper-status">[REPLACE: Working paper / under review · Year]</p>
+          <h3>[REPLACE: Title of your working paper]</h3>
+          <p class="authors">[REPLACE: Your Name and coauthors, if any]</p>
+          <p>[REPLACE: Describe the project’s question, approach, and preliminary contribution.]</p>
+          <div class="paper-links"><span class="pending">PDF <small>REPLACE: add link</small></span><span class="pending">Code / data <small>REPLACE: add link</small></span></div>
+          <details><summary>Read abstract</summary><div class="abstract"><p>[REPLACE: Full abstract for this working paper.]</p></div></details>
+        </article>
+      </section>
+      <section id="teaching" aria-labelledby="teaching-title">
+        <header class="section-heading"><h2 id="teaching-title">Teaching</h2></header>
+        <p>[REPLACE: A short description of your teaching interests or approach.]</p>
+        <article class="course"><p class="paper-status">[REPLACE: Term · Year]</p><h3>[REPLACE: Course title / code]</h3><p class="authors">[REPLACE: Instructor or teaching assistant · University]</p><p>[REPLACE: Brief course description and intended student level.]</p></article>
+        <article class="course"><p class="paper-status">[REPLACE: Term · Year]</p><h3>[REPLACE: Another course title / code]</h3><p class="authors">[REPLACE: Role · University]</p><p>[REPLACE: Brief course description.]</p></article>
+      </section>
+      -->
+      <footer><span>© 2026 Suryachandra Prasad Pasupuleti</span><a href="#about">Back to top ↑</a></footer>
+    </main>
+  </div>
+</body>
+</html>
